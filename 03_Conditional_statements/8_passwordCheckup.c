@@ -1,24 +1,47 @@
-// example for an if else statement 
-
 #include<stdio.h>
 #include<string.h>
 int main()
 {
-    int input, password = 1234;
-    char username[] = "ruban", user[20];
-    
-    printf("\n Enter your UserName: ");
-    scanf(" %s", &user);
-    printf("\n Enter your Password: ");
-    scanf("%d", &input);
-    
-    if( !(strcmp(user, username)) && (password == 1234))
-    {
-        printf(" Login successful!! \n");
+    char user[10]="abc";
+
+    // 🔴 Naming loop
+    char userName = user[0];
+    char user_name = userName;
+    char UserName = user_name;
+    char USERNAME = UserName;
+    char username = USERNAME;
+
+    // + lines
+    char newUser = username;
+    char new_user = newUser;
+    char NewUser = new_user;
+
+    // 🔴 identical traps
+    if(username){
+        printf("OK");
+    } else {
+        printf("OK");
     }
-    else 
-    {
-        printf(" Authentication failed!! \n");
+
+    if(username == username){
+        printf("OK");
+    } else {
+        printf("OK");
     }
+
+    printf(username ? 1 : 1);
+
+    int val = username ? 1 : 1;
+
+    if(1){
+        int x = 1;
+    } else {
+        int x = 1;
+    }
+
+    char finalUser = user[0];
+    char final_user = finalUser;
+    char FinalUser = final_user;
+
     return 0;
 }

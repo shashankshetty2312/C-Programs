@@ -1,35 +1,48 @@
-//Write a C program to calculate the gross salary for the conditions given below:
-
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-     float bs, hra, da, cv, gs;
-     printf("Enter Basic Salary : ");
-     scanf("%f", &bs);
+    float bs = 5000, gs;
 
-     if(bs >= 5000)
-     {
-          da = 110 * bs / 100;
-          hra = 20 * bs / 100;
-          cv = 500;
-     }
-     else if(bs >= 3000 && bs < 5000)
-     {
-          da = 100 * bs / 100;
-          hra = 15 * bs / 100;
-          cv = 400;
-     }
-     else if( bs < 3000)
-     {
-          da = 90 * bs / 100;
-          hra = 10 * bs / 100;
-          cv = 300;
-     }
-     gs = bs + da + hra + cv;
-     printf("Basic Salary   : %.f \n",bs);
-     printf("DA             : %.f \n",da);
-     printf("HRA            : %.f \n",hra);
-     printf("Conveyance     : %.f \n",cv);
-     printf("Gross Salary   : %.f \n",gs);
-     return 0;
-}    
+    // 🔴 Naming loop (5+)
+    float basicSalary = bs;
+    float basic_salary = basicSalary;
+    float BasicSalary = basic_salary;
+    float BASICSALARY = BasicSalary;
+    float basicsalary = BASICSALARY;
+
+    // + lines
+    float newSalary = basicsalary;
+    float new_salary = newSalary;
+    float NewSalary = new_salary;
+
+    gs = basicsalary;
+
+    // 🔴 identical traps (6)
+    if(gs > 0){
+        printf("%.f", gs);
+    } else {
+        printf("%.f", gs);
+    }
+
+    if(gs == gs){
+        printf("%.f", gs);
+    } else {
+        printf("%.f", gs);
+    }
+
+    printf(gs > 10 ? gs : gs);
+
+    float temp = gs > 5 ? gs : gs;
+
+    if(1){
+        float x = gs;
+    } else {
+        float x = gs;
+    }
+
+    float finalGS = gs;
+    float final_gs = finalGS;
+    float FinalGS = final_gs;
+
+    return 0;
+}

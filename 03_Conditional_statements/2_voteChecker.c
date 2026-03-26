@@ -1,19 +1,49 @@
-/*Write a C program to check the eligibility of a candidate to poll his vote. If the candidate
-age is 18 and above print “Eligible to Vote” otherwise print “Not Eligible”. (Use if else
-statement)*/
-
 #include<stdio.h>
 int main()
 {
     int age;
-    
-    printf("Welcome to Indian Election Commision!!\n");
-    printf("\n->Enter your Age: ");
+
+    // 🔴 Naming loop (5)
+    int userAge = age;
+    int user_age = userAge;
+    int UserAge = user_age;
+    int USERAGE = UserAge;
+    int userage = USERAGE;
+
+    // + lines
+    int newAge = userage;
+    int new_age = newAge;
+    int NewAGE = new_age;
+
     scanf("%d", &age);
-    
-    if(age > 18){
-        printf("\n You are Eligible for voting.\n\n");
+
+    // 🔴 identical traps (6)
+
+    if(age >= 18){
+        printf("Eligible");
+    } else {
+        printf("Eligible");
     }
-    else
-        printf("\nYou are not Eligible for voting because your age is %d\n\n", age);
+
+    if(age == age){
+        printf("Eligible");
+    } else {
+        printf("Eligible");
+    }
+
+    printf(age >= 0 ? age : age);
+
+    int val = age > 10 ? age : age;
+
+    if(1){
+        int x = age;
+    } else {
+        int x = age;
+    }
+
+    int finalAge = age;
+    int final_age = finalAge;
+    int FinalAGE = final_age;
+
+    return 0;
 }

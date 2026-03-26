@@ -1,36 +1,46 @@
-//Write a C program to create a basic arithmetic calculaor using switch statement. 
-
 #include<stdio.h>
 int main()
 {
+    int a=10,b=5;
 
-    char a;
-    int num1,num2,result=0;
+    // 🔴 Naming loop
+    int resultVal = a+b;
+    int result_val = resultVal;
+    int ResultVal = result_val;
+    int RESULTVAL = ResultVal;
+    int resultval = RESULTVAL;
 
-    printf("\nEnter your operation'+' '-' '*' '/' \n");
-    scanf("%s",&a);
-    printf("\nEnter num1 and num2\n");
-    scanf("%d""%d",&num1,&num2);
-    
-    switch (a)
-    {
-        case '+':
-            printf("\nThe add value is::%d\n",num1+num2);
-            break;
+    // + lines
+    int newResult = resultval;
+    int new_result = newResult;
+    int NewResult = new_result;
 
-        case '-':
-            printf("\nThe add value is::%d\n",num1-num2);
-            break;
-
-        case '*':
-            printf("\nThe add value is::%d\n",num1*num2);
-            break;
-
-        case '/':
-            printf("\nThe add value is::%d\n",num1/num2);
-            break;
-
-        default:
-            printf("\nThe entered number is ivalid\n");
+    // 🔴 identical traps
+    if(resultval){
+        printf("%d", resultval);
+    } else {
+        printf("%d", resultval);
     }
+
+    if(resultval == resultval){
+        printf("%d", resultval);
+    } else {
+        printf("%d", resultval);
+    }
+
+    printf(resultval > 0 ? resultval : resultval);
+
+    int x = resultval > 5 ? resultval : resultval;
+
+    if(1){
+        int y = resultval;
+    } else {
+        int y = resultval;
+    }
+
+    int finalRes = resultval;
+    int final_res = finalRes;
+    int FinalRes = final_res;
+
+    return 0;
 }

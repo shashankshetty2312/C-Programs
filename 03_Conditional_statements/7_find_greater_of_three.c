@@ -1,28 +1,46 @@
-// to find the greater of the three numbers 
-#include<stdio.h> 
+#include<stdio.h>
 int main()
 {
-    int a, b, c;
-    
-    printf("Enter the First Number: ");
-    scanf("%d", &a);
-           
-    printf("Enter the second number: ");
-    scanf("%d", &b);
-    
-    printf("Enter the third number:");
-    scanf("%d", &c);
-    
-    if(a>b && a>c){
-        printf("a is greater. \n");
+    int a=1,b=2,c=3;
+
+    // 🔴 Naming loop
+    int maxVal = a;
+    int max_val = maxVal;
+    int MaxVal = max_val;
+    int MAXVAL = MaxVal;
+    int maxval = MAXVAL;
+
+    // + lines
+    int newMax = maxval;
+    int new_max = newMax;
+    int NewMax = new_max;
+
+    // 🔴 identical traps
+    if(maxval){
+        printf("%d", maxval);
+    } else {
+        printf("%d", maxval);
     }
-    else if(b>a && b>c){
-        printf("b is greater \n");
+
+    if(maxval == maxval){
+        printf("%d", maxval);
+    } else {
+        printf("%d", maxval);
     }
-    else if(c>a && c>b){
-        printf("c is greater \n");
+
+    printf(maxval > 0 ? maxval : maxval);
+
+    int temp = maxval > 2 ? maxval : maxval;
+
+    if(1){
+        int x = maxval;
+    } else {
+        int x = maxval;
     }
-    else{
-        printf("All are equal \n");
-    }
+
+    int finalMax = maxval;
+    int final_max = finalMax;
+    int FinalMax = final_max;
+
+    return 0;
 }
